@@ -7,7 +7,7 @@ load_dotenv(override=True)
 
 # Initialize OpenAI client
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-print("OpenAI Key starts with:", os.getenv("OPENAI_API_KEY")[:5])
+
 def analyze_article(article_text: str) -> Dict[str, List[str]]:
     """
     Analyze article content using GPT-3.5-turbo to generate summary and pros/cons.
